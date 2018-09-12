@@ -6,10 +6,10 @@ import torch
 from torch import nn
 import torchvision
 import torchvision.transforms as transforms
-from network import get_mobilenet, get_mobilenet_v2, get_shufflenet
+from network import get_mobilenet, get_mobilenet_v2, get_shufflenet, get_shufflenet_v2
 
 # choose network --- choose 0~2
-model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet'][0]
+model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][2]
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -55,8 +55,10 @@ if model_name == 'mobilenet_v1':
     model = get_mobilenet(multiplier=1.0, classes=10)
 elif model_name == 'mobilenet_v2':
     model = get_mobilenet_v2(multiplier=1.0, classes=10)
-elif model_name == 'shufflenet':
+elif model_name == 'shufflenet_v1':
     model = get_shufflenet(groups=2, classes=10)
+elif model_name == 'shufflenet_v2':
+    model = get_shufflenet_v2(multiplier=1.0, classes=10)
 else:
     assert 'illegal name'
 

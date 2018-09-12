@@ -12,7 +12,7 @@ change  model name：
 
 ```python
 # choose network --- choose 0
-model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet'][0]
+model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][0]
 ```
 
 accuracy after epoch80：89.48%
@@ -23,21 +23,32 @@ change  model name：
 
 ```python
 # choose network --- choose 1
-model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet'][1]
+model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][1]
 ```
 
 accuracy after epoch80：89.29%
 
-### 3. ShuffleNet
+### 3. ShuffleNet v1
 
 change  model name：
 
 ```python
 # choose network --- choose 2
-model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet'][2]
+model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][2]
 ```
 
-accuracy after epoch80：84.45%
+accuracy after epoch80：
+
+### 4. ShuffleNet v2
+
+change  model name：
+
+```python
+# choose network --- choose 3
+model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][3]
+```
+
+accuracy after epoch80：
 
 ## Reference
 
