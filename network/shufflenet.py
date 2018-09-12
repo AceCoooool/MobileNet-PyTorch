@@ -159,7 +159,7 @@ def get_shufflenet_v2(multiplier=1.0, classes=1000):
     cfg = [{'out_planes': [48, 96, 192, 1024], 'num_blocks': [4, 8, 4]},
            {'out_planes': [116, 232, 464, 1024], 'num_blocks': [4, 8, 4]},
            {'out_planes': [176, 352, 704, 1024], 'num_blocks': [4, 8, 4]},
-           {'out_planes': [244, 488, 976, 2045], 'num_blocks': [4, 8, 4]}]
+           {'out_planes': [244, 488, 976, 2048], 'num_blocks': [4, 8, 4]}]
     select = {0.5: 0, 1.0: 1, 1.5: 2, 2.0: 3}
     net = ShuffleNetV2(cfg[select[multiplier]], classes)
     return net
