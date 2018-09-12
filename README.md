@@ -15,7 +15,7 @@ change  model name：
 model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet'][0]
 ```
 
-accuracy after epoch80：
+accuracy after epoch80：89.48%
 
 ### 2. MobileNet v2
 
