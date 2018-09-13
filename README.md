@@ -4,6 +4,7 @@ This is pytorch implemention of mobile architecture，converted from [gluon mode
 **Note**：
 
 - The architecture is coming from paper, so the original image size is 224x224 and with rescale=32. however, here use cifar10 as training dataset (image size is 32x32, and resize to 64x64), so the accuracy in this data is not well. (just as demo, so I did not try to modify the architecture)
+- train code is just demo，not compare the architecture
 - The default dataset root in  `your_computer_name/data`
 
 ### 1. MobileNet v1
@@ -48,7 +49,7 @@ change  model name：
 model_name = ['mobilenet_v1', 'mobilenet_v2', 'shufflenet_v1', 'shufflenet_v2'][3]
 ```
 
-accuracy after epoch80：
+accuracy after epoch80：82.99%
 
 ## Reference
 
